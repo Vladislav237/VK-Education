@@ -1,8 +1,4 @@
 def process_string(input_str):
-    """
-    Функция, которая принимает строку, обрабатывает ее в соответствии с условиями
-    и возвращает обработанную строку.
-    """
     processed_chars = []
     for char in input_str:
         if char not in "!@#%":
@@ -11,8 +7,6 @@ def process_string(input_str):
             else:
                 processed_chars.append(char.lower())
     return "".join(processed_chars)
-
-# Чтение и обработка входных данных
 while True:
     input_str = input()
     if not input_str:
